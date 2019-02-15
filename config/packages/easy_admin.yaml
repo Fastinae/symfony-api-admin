@@ -1,0 +1,37 @@
+easy_admin:
+   entities:
+        Booth:
+              class: App\Entity\Booth
+              form:
+                fields: 
+                    - 'name'
+                    - 'adress'
+        Dish:
+              class: App\Entity\Dish
+              form:
+                  fields:
+                    - 'name'
+                    - 'price'
+                    - 'vegetarian'
+        User:
+              class: App\Entity\User
+              form:
+                fields:
+                    - 'password'
+                    - 'roles'
+                    - 'email'
+        DishBooth:
+              class: App\Entity\DishBooth
+              form:
+                fields:
+                    - { property: 'booth', type: 'entity', type_options: { choice_label: 'id'}}
+                    - { property: 'dish', type: 'entity', type_options: { choice_label: 'id'}}
+        Rating:
+              class: App\Entity\Rating
+              form:
+                fields:
+                    - { property: 'booth', type: 'entity', type_options: { choice_label: 'id'}}
+                    - { property: 'user', type: 'entity', type_options: { choice_label: 'id'}}
+                    - 'note'
+                    - 'comment'
+                    - 'date'
