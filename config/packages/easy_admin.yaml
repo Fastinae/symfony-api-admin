@@ -20,7 +20,6 @@ easy_admin:
               form:
                 fields:
                     - 'password'
-                    # 
                     # - 'roles'
                     - 'email'
                     - { property: 'ratings', type: 'entity', type_options: { choice_label: 'id', multiple: true}}
