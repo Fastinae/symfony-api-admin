@@ -15,11 +15,15 @@ easy_admin:
                     - 'vegetarian'
         User:
               class: App\Entity\User
+              list:
+                fields: ['email', 'roles', 'ratings' ]
               form:
                 fields:
                     - 'password'
-                    - 'roles'
+                    # 
+                    # - 'roles'
                     - 'email'
+                    - { property: 'ratings', type: 'entity', type_options: { choice_label: 'id', multiple: true}}
         DishBooth:
               class: App\Entity\DishBooth
               form:
