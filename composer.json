@@ -8,9 +8,7 @@
         "api-platform/api-pack": "^1.2",
         "doctrine/doctrine-migrations-bundle": "^2.0",
         "easycorp/easyadmin-bundle": "^2.1",
-        "symfony/browser-kit": "4.2.*",
         "symfony/console": "4.2.*",
-        "symfony/css-selector": "4.2.*",
         "symfony/dotenv": "4.2.*",
         "symfony/flex": "^1.1",
         "symfony/framework-bundle": "4.2.*",
@@ -65,6 +63,8 @@
     },
     "require-dev": {
         "doctrine/doctrine-fixtures-bundle": "^3.1",
-        "fzaninotto/faker": "^1.8"
+        "fzaninotto/faker": "^1.8",
+        "symfony/browser-kit": "4.2.*",
+        "symfony/css-selector": "4.2.*"
     }
 }
